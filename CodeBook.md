@@ -193,6 +193,7 @@ The signals may be divided up into their X,Y,Z components, or the full magnitude
 of the measurement may be given (marked by "Mag" in the variable name).
 
 Other 66 variable names:
+
 timeBodyAccel_mean_X
 
 timeBodyAccel_mean_Y
