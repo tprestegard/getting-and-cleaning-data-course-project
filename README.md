@@ -20,7 +20,7 @@ averaged over subject and activity.
 There is a code book in this repository called "CodeBook.md" which contains a description
 of the raw and tidy data, the cleaning procedure, and descriptions of the variables.
 
-### DESCRIPTION OF DATA CLEANING CODE (run_analysis.R)
+## DESCRIPTION OF DATA CLEANING CODE (run_analysis.R)
 1. Load activity labels and description from "activity_labels.txt" in the raw
    dataset.  This matches an ID number to an activity description.
 2. Load variable names from "features.txt" in the raw dataset.
