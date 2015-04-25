@@ -12,7 +12,7 @@ Spain. Dec 2012.
 ################################################################################
 
 ################################################################################
-EXPERIMENTAL DESCRIPTION
+### EXPERIMENTAL DESCRIPTION
 The experiments have been carried out with a group of 30 volunteers
 within an age bracket of 19-48 years. Each person performed six activities
 (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
@@ -25,7 +25,7 @@ the training data and 30% the test data.
 ################################################################################
 
 ################################################################################
-RAW DATA
+### RAW DATA
 The raw data included 561 different measurements, subject ID, activity ID, and
 activity description.  There were two datasets - one marked "training" and one
 marked "test."  A description of the raw data measurements follow:
@@ -80,7 +80,7 @@ The combination of signals and properties produces 561 variables in the raw data
 ################################################################################
 
 ################################################################################
-DESCRIPTION OF TIDY DATASET
+### DESCRIPTION OF TIDY DATASET
 The tidy dataset contains 68 variables in total - the first two are the subject
 ID and the activity, and the other 66 are the averages of mean and standard
 deviation measurements from the raw dataset.
@@ -92,19 +92,19 @@ found below in the "TIDY DATA VARIABLE DESCRIPTION" section.
 ################################################################################
 
 ################################################################################
-CREATING THE TIDY DATA FILE
+### CREATING THE TIDY DATA FILE
 1. Download the data from
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. Run the cleaning script "run_analysis.R".
 ################################################################################
 
 ################################################################################
-HOW TO LOAD THE TIDY DATASET
+### HOW TO LOAD THE TIDY DATASET
 read.table("tidy_data.txt",header=TRUE, sep=" ")
 ################################################################################
 
 ################################################################################
-DESCRIPTION OF DATA CLEANING CODE (run_analysis.R)
+### DESCRIPTION OF DATA CLEANING CODE (run_analysis.R)
 1. Load activity labels and description from "activity_labels.txt" in the raw
    dataset.  This matches an ID number to an activity description.
 2. Load variable names from "features.txt" in the raw dataset.
@@ -136,7 +136,7 @@ DESCRIPTION OF DATA CLEANING CODE (run_analysis.R)
 ################################################################################
 
 ################################################################################
-TIDY DATA VARIABLE DESCRIPTIONS
+### TIDY DATA VARIABLE DESCRIPTIONS
 subject_id - ID number of the subject performing the trial.  Has 30 unique values
 		     (integers between 1 and 30).
 activity   - description of the activity being performed by the subject.  Has 6
