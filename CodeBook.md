@@ -1,4 +1,4 @@
-Code Book for Getting and Cleaning Data course project
+# Code Book for Getting and Cleaning Data course project
 --------------------------------------------------------------------------------
 
 ################################################################################
@@ -31,21 +31,37 @@ activity description.  There were two datasets - one marked "training" and one
 marked "test."  A description of the raw data measurements follow:
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
+
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
+
 tGravityAccMag
+
 tBodyAccJerkMag
+
 tBodyGyroMag
+
 tBodyGyroJerkMag
+
 fBodyAcc-XYZ
+
 fBodyAccJerk-XYZ
+
 fBodyGyro-XYZ
+
 fBodyAccMag
+
 fBodyAccJerkMag
+
 fBodyGyroMag
+
 fBodyGyroJerkMag
 
 The variable list is too extension to describe each individually so we will
@@ -59,21 +75,37 @@ of the measurement may be given (marked by "Mag" in the variable name).
 
 For each of these signals, the following properties were estimated:
 mean(): mean value
+
 std(): standard deviation
-mad(): median absolute deviation 
+
+mad(): median absolute deviation
+
 max(): largest value in array
+
 min(): smallest value in array
+
 sma(): signal magnitude area
+
 energy(): energy measure. Sum of the squares divided by the number of values. 
+
 iqr(): interquartile range 
+
 entropy(): signal entropy
+
 arCoeff(): autorregresion coefficients with Burg order equal to 4
+
 correlation(): correlation coefficient between two signals
+
 maxInds(): index of the frequency component with largest magnitude
+
 meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+
 skewness(): skewness of the frequency domain signal 
+
 kurtosis(): kurtosis of the frequency domain signal 
+
 bandsEnergy(): energy of a frequency interval within the 64 bins of the FFT of each window.
+
 angle(): angle between two vectors.
 
 The combination of signals and properties produces 561 variables in the raw dataset.
@@ -96,11 +128,14 @@ found below in the "TIDY DATA VARIABLE DESCRIPTION" section.
 1. Download the data from
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. Run the cleaning script "run_analysis.R".
+
 ################################################################################
 
 ################################################################################
 ### HOW TO LOAD THE TIDY DATASET
+```
 read.table("tidy_data.txt",header=TRUE, sep=" ")
+```
 ################################################################################
 
 ################################################################################
@@ -130,6 +165,7 @@ read.table("tidy_data.txt",header=TRUE, sep=" ")
 	- Replace "-" by "_".
 	- Replace "Acc" by "Accel".
 	- Remove occurrences of "()".
+	
 	These steps were taken to improve variable readability and remove
 	problematic variable name formatting.
 16. Save the new tidy data in a space-separated text file.
